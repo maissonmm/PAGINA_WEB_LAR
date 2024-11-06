@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/MAISSON.CSS/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    
+    <title> MEIO AMBIENTE LAR </title>
+</head>
+
+<body style="background-color: #ef3340;background-image: url('/img/Lar_Pag_Principal1.png');background-repeat: no-repeat;background-position: center;background-attachment: fixed;background-position-x: center;">
+    
+
+    <img src="/img/planeta-terra.png" alt="" id="mundo">
+
+    <ul class="nav nav-pills" id="menu">
+        <img src="/img/Logo_nav.png" alt="Logo">
+        <li class="nav-item">
+           <h1 style="color: green; position: absolute;left: 38%;">Bem-vindo ao desafio ambiental!</h1> <!-- <button type="button" class="btn btn-outline-danger" id="entrar">Login</button> -->
+        </li>
+    </ul>
+    <button type="button" id="cadastre" onmouseenter="style= 'border:3px solid black' "
+        onmouseout="style='border=0'">JOGAR</button>
+    <!-- POP UP DE ACESSO -->
+    <!-- <div id="acesso">
+        <div id="acesso2">
+            <img src="/img/frango_lar-removebg-preview (1).png" alt="">
+            <div id="x">x</div>
+            <div class="acesso3">
+                <label for="usuario">usuario</label>
+                <input type="text" name="usuario" id="usuario">
+            </div>
+            <div class="acesso3">
+                <label for="senha">senha</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+            <button onclick="entrar()" class="btn btn-danger" >Entrar</button>
+        </div>
+    </div> -->
+
+
+    <!-- POP UP DE CADASTRO -->
+    <div id="cadastro">
+        <div id="cadastro3">
+            <img src="/img/frango_lar-removebg-preview (1).png" alt="" id="frango">
+            <img src="/img/janela-de-conversa.png" alt="" id="balao">
+            <h2>DIGITE SEU NOME <br> E SUA MATRICULA</h2>
+        </div>
+        <form action="/conexao.php" method="post" id="cadastro2">
+            <div id="x2">x</div>
+            <div class="cadastro3">
+                <label for="usuario"><b>USUARIO</b></label>
+                <input type="text" name="usuario1" id="usuario" required>
+            </div>
+            <div class="cadastro3">
+                <label for="matricula"><b>MATRICULA</b></label>
+                <input type="number" name="matricula1" id="matricula" required>
+            </div>
+            <div class="cadastro3">
+                <label for="matricula"><b>LAC</b></label>
+                <input type="number" name="lac1" id="lac" required>
+            </div>
+            <button type="submit" name="submit"  class="btn btn-danger">Cadastrar</button>
+        </form>
+    </div>   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/JSMAI/script.js"></script>
+</body>
+
+</html>

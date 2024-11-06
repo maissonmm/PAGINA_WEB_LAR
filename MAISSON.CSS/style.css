@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body #mundo{
+    width: 148px;
+    position: absolute;
+    top: 40%;
+    left: 66%;
+}
+
+
+
+
+/* BARRA DE NAVEGAÇÃO */
+#menu {
+    display: flex;
+    background-color: white;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu #entrar{
+    margin-right: 20px;
+    margin-top: 20px; 
+}
+#menu #cadastre{
+    margin-right: 20px;
+    margin-top: 20px;
+}
+#menu img{
+    margin-left: 20px;
+    width: 60px;
+    /* margin-top: -10px; */
+}
+/* LOGO BODY */
+.logo{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.logo img{ 
+    padding: 300px;
+}
+
+/* POP UP DE ACESSO */
+
+#acesso{
+    display: none;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation-name: coisa;
+    animation-duration: 800ms;
+    /* display: inline-flex; */
+    justify-content: center;
+    align-items: center;
+}
+@keyframes coisa { 
+    0% { opacity: 0;
+    top: -100px;}
+    100%{opacity: 100%;}
+}
+#acesso #acesso2{
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 200px;
+    margin: 20% auto;
+    padding: 20px;
+    background: #ffffffef;
+    position: relative;
+    border-radius: 4%;
+    box-shadow: 5px 5px 1px 0 #00000080;
+}
+#acesso2 img{
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+}
+.acesso3 label{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+.acesso3 input{
+    border: 0;
+    border-bottom: 2px solid #ef3340 ;
+    border-radius: 10%;
+    background-color: transparent;
+    outline: none;
+}
+#acesso2 button{
+    margin-top: 4%;
+    
+}
+#acesso2 #x{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+/* POP UP CADASTRO */
+#cadastro{
+    display: none;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation-name: coisa;
+    animation-duration: 800ms;
+    /* display: inline-flex; */
+    justify-content: center;
+    align-items: center;
+}
+#cadastro3{
+    background: #ffffffef;
+    border-radius: 4%;
+    box-shadow: 5px 5px 1px 0 #00000080;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 300px;
+
+
+    position: absolute;
+    left: 23.5%;
+}
+#cadastro3 #frango{
+    position: absolute;
+    left: 14%;
+    top: 14%;
+}
+#cadastro3 #balao{
+    width: 114px;
+    position: absolute;
+    left: 43%;
+    top: 47%;
+}
+#cadastro3 h2{
+    font-size: 11px;
+    position: absolute;
+    top: 64%;
+    left: 46%;
+}
+@keyframes coisa { 
+    0% { opacity: 0;
+    top: -100px;}
+    100%{opacity: 100%;}
+}
+#cadastro #cadastro2{
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 300px;
+    margin: 20% auto;
+    padding: 20px;
+    background: #ffffffef;
+    position: relative;
+    border-radius: 4%;
+    box-shadow: 5px 5px 1px 0 #00000080;
+}
+.cadastro3 label{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    margin-top: 3%;
+}
+.cadastro3 input{
+    border: 0;
+    border-bottom: 2px solid #ef3340 ;
+    border-radius: 10%;
+    background-color: transparent;
+    outline: none;
+}
+#cadastro2 button{
+    position: relative;
+    top: 8%;    
+}
+#cadastro2 #x2{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+#cadastre{
+    background-color: white;
+    color:#ef3340;
+    border: 0;
+    cursor: pointer;
+    border-radius: 4%;
+    padding: 90px 120px 90px 120px;
+    position: absolute;
+    bottom: 6%;
+    left: 43%;
+    font-size: 35px;
+}
+#uia{
+    position: relative;
+    top: 8%;
+    left: 13%;
+}
+
+
+
+
+/* RELATORIO */
+
+
+#menu #relatorios{
+    position: absolute;
+    right: 1%;
+    top: 6%;
+}
+#relatorio{
+    position: absolute;
+    right: 0;
+    top: 6%;
+}
+#relatorio{
+    display: none;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation-name: coisa;
+    animation-duration: 800ms;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+@keyframes coisa { 
+    0% { opacity: 0;
+    top: -100px;}
+    100%{opacity: 100%;}
+}
+#relatorio #relatorio2{
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    max-height: 590px;
+    margin: 20% auto;
+    padding: 20px;
+    background: #ffffffef;
+    position: relative;
+    border-radius: 4%;
+    box-shadow: 5px 5px 1px 0 #00000080;
+}
+.relatorio3{
+    display: flex;
+}
+.relatorio3 #secao{
+    position: absolute;
+    top: 35%;
+    right: 9%;
+    padding: 35px;
+    font-size: 25px;
+}
+.relatorio3 #nota{
+    position: absolute;
+    top: 35%;
+    left: 9%;
+    padding: 35px;
+    font-size: 25px;
+}
+.relatorio3 label{
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    margin-top: 3%;
+}
+.relatorio3 input{
+    border: 0;
+    border-bottom: 2px solid #ef3340 ;
+    border-radius: 10%;
+    background-color: transparent;
+    outline: none;
+}
+#relatorio2 button{
+    position: absolute;
+    bottom: 10%;
+    right: 40.5%;
+    padding: 25px;
+    font-size: 28px;
+    
+}
+#relatorio2 #x3{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    cursor: pointer;
+    font-size: 27px;
+}
+#relatorio2 #texto{
+    position: absolute;
+    top: 15%;
+    left: 17%;
+    font-size: 31px;
+    color: #ef3340;
+}
+/* #cadastre{
+    background-color: white;
+    color:#ef3340;
+    border: 0;
+    cursor: pointer;
+    border-radius: 4%;
+    padding: 90px 120px 90px 120px;
+    position: absolute;
+    bottom: 6%;
+    left: 43%;
+    font-size: 35px;
+} */
+#uia{
+    position: relative;
+    top: 8%;
+    left: 13%;
+}

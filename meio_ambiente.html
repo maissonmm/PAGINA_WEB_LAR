@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/paginas_jogos.css/meioambiente.css">
+    <title>MEIO AMBIENTE LAR</title>
+</head>
+
+<body
+    style="background-color: #ef3340;background-image: url('/img/Lar_Pag_Principal1.png');background-repeat: no-repeat;background-position: center;background-attachment: fixed;background-position-x: center;">
+    <img src="/img/planeta-terra.png" alt="" id="mundo">
+
+    <ul class="nav nav-pills" id="menu">
+        <img src="/img/Logo_nav.png" alt="Logo">
+        <li class="nav-item">
+            <button type="button" class="btn btn-outline-danger" id="sair" onclick="inicio()">Sair</button>
+        </li>
+    </ul>
+
+
+    <div id="pop-upI">
+        <div id="respostaErrada">
+            <img src="/img/errada.gif" alt="" id="errado">
+            <h1>RESPOSTA ERRADA</h1>
+            <button class="btn btn-outline-danger" onclick="proximo()" id="avançar1">AVANÇAR</button>
+        </div>
+        <div id="certaResposta">
+            <img src="/img/verificado.gif" alt="" id="certo">
+            <h1>CERTA RESPOSTA</h1>
+            <button class="btn btn-outline-danger" onclick="proximo()" id="avançar">AVANÇAR</button>
+        </div>
+
+
+
+
+        <div class="container" id="pop-upE0">
+            <div class="cards">
+                <div class="vermelho">
+                    <img src="/img/lixeira-vermelha-removebg-preview.png" alt="" class="setaV2">
+                    <input type="checkbox" name="grupo" value="vermelho" id="setaV1">
+                </div>
+                <div class="azul">
+                    <img src="/img/lixeira-azul-removebg-preview.png" alt="" class="setaA2">
+                    <input type="checkbox" name="grupo" value="azul" id="setaA1">
+                </div>
+                <div class="verde">
+                    <img src="/img/lixeira-verde-removebg-preview.png" alt="" class="setaVer2">
+                    <input type="checkbox" name="grupo" value="verde" id="setaVer1">
+                </div>
+                <div class="marrom">
+                    <img src="/img/lixeira-marrom-removebg-preview.png" alt="" class="setaM2">
+                    <input type="checkbox" name="grupo" value="marrom" id="setaM1">
+                </div>
+                <div class="amarelo">
+                    <img src="/img/lixeira-amarela-removebg-preview.png" alt="" class="setaAm2">
+                    <input type="checkbox" name="grupo" value="amarelo" id="setaAm1">
+                </div>
+            </div>
+            <div>
+                <img src="/img/seta-curva.png" alt="" class="setaV" id="seta0">
+                <img src="/img/setas-flechas.png" alt="" class="setaA" id="seta1">
+                <img src="/img/seta-PhotoRoom.png" alt="" class="setaVer" id="seta2">
+                <img src="/img/setas-flechas (1).png" alt="" class="setaM" id="seta3">
+                <img src="/img/seta-curva-PhotoRoom (1).png" alt="" class="setaAm" id="seta4">
+            </div>
+            <div>
+                <img src="/img/lata-de-cerveja.png" alt="" id="lata">
+            </div>
+            <button id="confirmar" class="btn btn-danger" onclick="proximo()">CONFIRMAR</button>
+
+        </div>
+        <div class="container" id="pop-upE1">
+            <div class="cards">
+                <div class="vermelho">
+                    <img src="/img/lixeira-vermelha-removebg-preview.png" alt="" class="setaV2">
+                    <input type="checkbox" name="grupo1" value="vermelho" class="setaV1" id="check1">
+                </div>
+                <div class="azul">
+                    <img src="/img/lixeira-azul-removebg-preview.png" alt="" class="setaA2">
+                    <input type="checkbox" name="grupo1" value="azul" class="setaA1" id="check2">
+                </div>
+                <div class="verde">
+                    <img src="/img/lixeira-verde-removebg-preview.png" alt="" class="setaVer2">
+                    <input type="checkbox" name="grupo1" value="verde" class="setaVer1" id="check3">
+                </div>
+                <div class="marrom">
+                    <img src="/img/lixeira-marrom-removebg-preview.png" alt="" class="setaM2">
+                    <input type="checkbox" name="grupo1" value="marrom" class="setaM1" id="check4">
+                </div>
+                <div class="amarelo">
+                    <img src="/img/lixeira-amarela-removebg-preview.png" alt="" class="setaAm2">
+                    <input type="checkbox" name="grupo1" value="amarelo" class="setaAm1" id="check5">
+                </div>
+            </div>
+            <div>
+                <img src="/img/seta-curva.png" alt="" class="setaV" id="seta0-1">
+                <img src="/img/setas-flechas.png" alt="" class="setaA" id="seta1-1">
+                <img src="/img/seta-PhotoRoom.png" alt="" class="setaVer" id="seta2-1">
+                <img src="/img/setas-flechas (1).png" alt="" class="setaM" id="seta3-1">
+                <img src="/img/seta-curva-PhotoRoom (1).png" alt="" class="setaAm" id="seta4-1">
+            </div>
+            <div>
+                <img src="/img/platisco.png" alt="" id="garrafa">
+            </div>
+            <button id="confirmar" class="btn btn-danger" onclick="proximo()">CONFIRMAR</button>
+
+        </div>
+        <div class="container" id="pop-upE2">
+            <div class="cards">
+                <div class="vermelho">
+                    <img src="/img/lixeira-vermelha-removebg-preview.png" alt="" class="setaV2">
+                    <input type="checkbox" name="grupo2" value="vermelho" class="setaV1" id="check1.1">
+                </div>
+                <div class="azul">
+                    <img src="/img/lixeira-azul-removebg-preview.png" alt="" class="setaA2">
+                    <input type="checkbox" name="grupo2" value="azul" class="setaA1" id="check2.1">
+                </div>
+                <div class="verde">
+                    <img src="/img/lixeira-verde-removebg-preview.png" alt="" class="setaVer2">
+                    <input type="checkbox" name="grupo2" value="verde" class="setaVer1" id="check3.1">
+                </div>
+                <div class="marrom">
+                    <img src="/img/lixeira-marrom-removebg-preview.png" alt="" class="setaM2">
+                    <input type="checkbox" name="grupo2" value="marrom" class="setaM1" id="check4.1">
+                </div>
+                <div class="amarelo">
+                    <img src="/img/lixeira-amarela-removebg-preview.png" alt="" class="setaAm2">
+                    <input type="checkbox" name="grupo2" value="amarelo" class="setaAm1" id="check5.1">
+                </div>
+            </div>
+            <div>
+                <img src="/img/seta-curva.png" alt="" class="setaV" id="seta0-2">
+                <img src="/img/setas-flechas.png" alt="" class="setaA" id="seta1-2">
+                <img src="/img/seta-PhotoRoom.png" alt="" class="setaVer" id="seta2-2">
+                <img src="/img/setas-flechas (1).png" alt="" class="setaM" id="seta3-2">
+                <img src="/img/seta-curva-PhotoRoom (1).png" alt="" class="setaAm" id="seta4-2">
+            </div>
+            <div>
+                <img src="/img/mordida-de-maca.png" alt="" id="maca">
+            </div>
+            <button id="confirmar" class="btn btn-danger" onclick="proximo()">CONFIRMAR</button>
+        </div>
+        <div class="container" id="pop-upE3">
+            <div class="cards">
+                <div class="vermelho">
+                    <img src="/img/lixeira-vermelha-removebg-preview.png" alt="" class="setaV2">
+                    <input type="checkbox" name="grupo3" value="vermelho" class="setaV1" id="check1.2">
+                </div>
+                <div class="azul">
+                    <img src="/img/lixeira-azul-removebg-preview.png" alt="" class="setaA2">
+                    <input type="checkbox" name="grupo3" value="azul" class="setaA1" id="check2.2">
+                </div>
+                <div class="verde">
+                    <img src="/img/lixeira-verde-removebg-preview.png" alt="" class="setaVer2">
+                    <input type="checkbox" name="grupo3" value="verde" class="setaVer1" id="check3.2">
+                </div>
+                <div class="marrom">
+                    <img src="/img/lixeira-marrom-removebg-preview.png" alt="" class="setaM2">
+                    <input type="checkbox" name="grupo3" value="marrom" class="setaM1" id="check4.2">
+                </div>
+                <div class="amarelo">
+                    <img src="/img/lixeira-amarela-removebg-preview.png" alt="" class="setaAm2">
+                    <input type="checkbox" name="grupo3" value="amarelo" class="setaAm1" id="check5.2">
+                </div>
+            </div>
+            <div>
+                <img src="/img/seta-curva.png" alt="" class="setaV" id="seta0-3">
+                <img src="/img/setas-flechas.png" alt="" class="setaA" id="seta1-3">
+                <img src="/img/seta-PhotoRoom.png" alt="" class="setaVer" id="seta2-3">
+                <img src="/img/setas-flechas (1).png" alt="" class="setaM" id="seta3-3">
+                <img src="/img/seta-curva-PhotoRoom (1).png" alt="" class="setaAm" id="seta4-3">
+            </div>
+            <div>
+                <img src="/img/caixa-de-papel-PhotoRoom.png" alt="" id="papel">
+            </div>
+            <button id="confirmar" class="btn btn-danger" onclick="proximo()">CONFIRMAR</button>
+        </div>
+        <div class="container" id="pop-upE4">
+            <div class="cards">
+                <div class="vermelho">
+                    <img src="/img/lixeira-vermelha-removebg-preview.png" alt="" class="setaV2">
+                    <input type="checkbox" name="grupo4" value="vermelho" class="setaV1" id="check1.3">
+                </div>
+                <div class="azul">
+                    <img src="/img/lixeira-azul-removebg-preview.png" alt="" class="setaA2">
+                    <input type="checkbox" name="grupo4" value="azul" class="setaA1" id="check2.3">
+                </div>
+                <div class="verde">
+                    <img src="/img/lixeira-verde-removebg-preview.png" alt="" class="setaVer2">
+                    <input type="checkbox" name="grupo4" value="verde" class="setaVer1" id="check3.3">
+                </div>
+                <div class="marrom">
+                    <img src="/img/lixeira-marrom-removebg-preview.png" alt="" class="setaM2">
+                    <input type="checkbox" name="grupo4" value="marrom" class="setaM1" id="check4.3">
+                </div>
+                <div class="amarelo">
+                    <img src="/img/lixeira-amarela-removebg-preview.png" alt="" class="setaAm2">
+                    <input type="checkbox" name="grupo4" value="amarelo" class="setaAm1" id="check5.3">
+                </div>
+            </div>
+            <div>
+                <img src="/img/seta-curva.png" alt="" class="setaV" id="seta0-4">
+                <img src="/img/setas-flechas.png" alt="" class="setaA" id="seta1-4">
+                <img src="/img/seta-PhotoRoom.png" alt="" class="setaVer" id="seta2-4">
+                <img src="/img/setas-flechas (1).png" alt="" class="setaM" id="seta3-4">
+                <img src="/img/seta-curva-PhotoRoom (1).png" alt="" class="setaAm" id="seta4-4">
+            </div>
+            <div>
+                <img src="/img/garrafa.vidro.png" alt="" id="vidro">
+            </div>
+            <button id="confirmar" class="btn btn-danger" onclick="proximo()">CONFIRMAR</button>
+        </div>
+        <div class="container" id="pop-upE5">
+            <div class="cards">
+                <div class="vermelho">
+                    <img src="/img/lixeira-vermelha-removebg-preview.png" alt="" class="setaV2">
+                    <input type="checkbox" name="grupo5" value="vermelho" class="setaV1" id="check1.4">
+                </div>
+                <div class="azul">
+                    <img src="/img/lixeira-azul-removebg-preview.png" alt="" class="setaA2">
+                    <input type="checkbox" name="grupo5" value="azul" class="setaA1" id="check2.4">
+                </div>
+                <div class="verde">
+                    <img src="/img/lixeira-verde-removebg-preview.png" alt="" class="setaVer2">
+                    <input type="checkbox" name="grupo5" value="verde" class="setaVer1" id="check3.4">
+                </div>
+                <div class="marrom">
+                    <img src="/img/lixeira-marrom-removebg-preview.png" alt="" class="setaM2">
+                    <input type="checkbox" name="grupo5" value="marrom" class="setaM1" id="check4.4">
+                </div>
+                <div class="amarelo">
+                    <img src="/img/lixeira-amarela-removebg-preview.png" alt="" class="setaAm2">
+                    <input type="checkbox" name="grupo5" value="amarelo" class="setaAm1" id="check5.4">
+                </div>
+            </div>
+            <div>
+                <img src="/img/seta-curva.png" alt="" class="setaV" id="seta0-5">
+                <img src="/img/setas-flechas.png" alt="" class="setaA" id="seta1-5">
+                <img src="/img/seta-PhotoRoom.png" alt="" class="setaVer" id="seta2-5">
+                <img src="/img/setas-flechas (1).png" alt="" class="setaM" id="seta3-5">
+                <img src="/img/seta-curva-PhotoRoom (1).png" alt="" class="setaAm" id="seta4-5">
+            </div>
+            <div>
+                <img src="/img/parafusos.png" alt="" id="parafuso">
+            </div>
+            <button id="confirmar" class="btn btn-danger" onclick="proximo()">CONFIRMAR</button>
+        </div>
+        <div class="container" id="pop-upE6">
+            <div class="cards">
+                <div class="vermelho">
+                    <img src="/img/lixeira-vermelha-removebg-preview.png" alt="" class="setaV2">
+                    <input type="checkbox" name="grupo6" value="vermelho" class="setaV1" id="check1.5">
+                </div>
+                <div class="azul">
+                    <img src="/img/lixeira-azul-removebg-preview.png" alt="" class="setaA2">
+                    <input type="checkbox" name="grupo6" value="azul" class="setaA1" id="check2.5">
+                </div>
+                <div class="verde">
+                    <img src="/img/lixeira-verde-removebg-preview.png" alt="" class="setaVer2">
+                    <input type="checkbox" name="grupo6" value="verde" class="setaVer1" id="check3.5">
+                </div>
+                <div class="marrom">
+                    <img src="/img/lixeira-marrom-removebg-preview.png" alt="" class="setaM2">
+                    <input type="checkbox" name="grupo6" value="marrom" class="setaM1" id="check4.5">
+                </div>
+                <div class="amarelo">
+                    <img src="/img/lixeira-amarela-removebg-preview.png" alt="" class="setaAm2">
+                    <input type="checkbox" name="grupo6" value="amarelo" class="setaAm1" id="check5.5">
+                </div>
+            </div>
+            <div>
+                <img src="/img/seta-curva.png" alt="" class="setaV" id="seta0-6">
+                <img src="/img/setas-flechas.png" alt="" class="setaA" id="seta1-6">
+                <img src="/img/seta-PhotoRoom.png" alt="" class="setaVer" id="seta2-6">
+                <img src="/img/setas-flechas (1).png" alt="" class="setaM" id="seta3-6">
+                <img src="/img/seta-curva-PhotoRoom (1).png" alt="" class="setaAm" id="seta4-6">
+            </div>
+            <div>
+                <img src="/img/copo.png" alt="" id="copo">
+            </div>
+            <button id="confirmar" class="btn btn-danger" onclick="proximo()">CONFIRMAR</button>
+        </div>
+        <div class="container" id="pop-upE7">
+            <div class="cards">
+                <div class="vermelho">
+                    <img src="/img/lixeira-vermelha-removebg-preview.png" alt="" class="setaV2">
+                    <input type="checkbox" name="grupo7" value="vermelho" class="setaV1" id="check1.6">
+                </div>
+                <div class="azul">
+                    <img src="/img/lixeira-azul-removebg-preview.png" alt="" class="setaA2">
+                    <input type="checkbox" name="grupo7" value="azul" class="setaA1" id="check2.6">
+                </div>
+                <div class="verde">
+                    <img src="/img/lixeira-verde-removebg-preview.png" alt="" class="setaVer2">
+                    <input type="checkbox" name="grupo7" value="verde" class="setaVer1" id="check3.6">
+                </div>
+                <div class="marrom">
+                    <img src="/img/lixeira-marrom-removebg-preview.png" alt="" class="setaM2">
+                    <input type="checkbox" name="grupo7" value="marrom" class="setaM1" id="check4.6">
+                </div>
+                <div class="amarelo">
+                    <img src="/img/lixeira-amarela-removebg-preview.png" alt="" class="setaAm2">
+                    <input type="checkbox" name="grupo7" value="amarelo" class="setaAm1" id="check5.6">
+                </div>
+            </div>
+            <div>
+                <img src="/img/seta-curva.png" alt="" class="setaV" id="seta0-7">
+                <img src="/img/setas-flechas.png" alt="" class="setaA" id="seta1-7">
+                <img src="/img/seta-PhotoRoom.png" alt="" class="setaVer" id="seta2-7">
+                <img src="/img/setas-flechas (1).png" alt="" class="setaM" id="seta3-7">
+                <img src="/img/seta-curva-PhotoRoom (1).png" alt="" class="setaAm" id="seta4-7">
+            </div>
+            <div>
+                <img src="/img/banana.png" alt="" id="banana">
+            </div>
+            <button id="confirmar" class="btn btn-danger" onclick="proximo()">CONFIRMAR</button>
+        </div>
+        <div class="container" id="pop-upE8">
+            <div class="cards">
+                <div class="vermelho">
+                    <img src="/img/lixeira-vermelha-removebg-preview.png" alt="" class="setaV2">
+                    <input type="checkbox" name="grupo8" value="vermelho" class="setaV1" id="check1.7">
+                </div>
+                <div class="azul">
+                    <img src="/img/lixeira-azul-removebg-preview.png" alt="" class="setaA2">
+                    <input type="checkbox" name="grupo8" value="azul" class="setaA1" id="check2.7">
+                </div>
+                <div class="verde">
+                    <img src="/img/lixeira-verde-removebg-preview.png" alt="" class="setaVer2">
+                    <input type="checkbox" name="grupo8" value="verde" class="setaVer1" id="check3.7">
+                </div>
+                <div class="marrom">
+                    <img src="/img/lixeira-marrom-removebg-preview.png" alt="" class="setaM2">
+                    <input type="checkbox" name="grupo8" value="marrom" class="setaM1" id="check4.7">
+                </div>
+                <div class="amarelo">
+                    <img src="/img/lixeira-amarela-removebg-preview.png" alt="" class="setaAm2">
+                    <input type="checkbox" name="grupo8" value="amarelo" class="setaAm1" id="check5.7">
+                </div>
+            </div>
+            <div>
+                <img src="/img/seta-curva.png" alt="" class="setaV" id="seta0-8">
+                <img src="/img/setas-flechas.png" alt="" class="setaA" id="seta1-8">
+                <img src="/img/seta-PhotoRoom.png" alt="" class="setaVer" id="seta2-8">
+                <img src="/img/setas-flechas (1).png" alt="" class="setaM" id="seta3-8">
+                <img src="/img/seta-curva-PhotoRoom (1).png" alt="" class="setaAm" id="seta4-8">
+            </div>
+            <div>
+                <img src="/img/galao.png" alt="" id="galao">
+            </div>
+            <button id="confirmar" class="btn btn-danger" onclick="proximo()">CONFIRMAR</button>
+        </div>
+        <div class="container" id="pop-upE9">
+            <div class="cards">
+                <div class="vermelho">
+                    <img src="/img/lixeira-vermelha-removebg-preview.png" alt="" class="setaV2">
+                    <input type="checkbox" name="grupo9" value="vermelho" class="setaV1" id="check1.8">
+                </div>
+                <div class="azul">
+                    <img src="/img/lixeira-azul-removebg-preview.png" alt="" class="setaA2">
+                    <input type="checkbox" name="grupo9" value="azul" class="setaA1" id="check2.8">
+                </div>
+                <div class="verde">
+                    <img src="/img/lixeira-verde-removebg-preview.png" alt="" class="setaVer2">
+                    <input type="checkbox" name="grupo9" value="verde" class="setaVer1" id="check3.8">
+                </div>
+                <div class="marrom">
+                    <img src="/img/lixeira-marrom-removebg-preview.png" alt="" class="setaM2">
+                    <input type="checkbox" name="grupo9" value="marrom" class="setaM1" id="check4.8">
+                </div>
+                <div class="amarelo">
+                    <img src="/img/lixeira-amarela-removebg-preview.png" alt="" class="setaAm2">
+                    <input type="checkbox" name="grupo9" value="amarelo" class="setaAm1" id="check5.8">
+                </div>
+            </div>
+            <div>
+                <img src="/img/seta-curva.png" alt="" class="setaV" id="seta0-9">
+                <img src="/img/setas-flechas.png" alt="" class="setaA" id="seta1-9">
+                <img src="/img/seta-PhotoRoom.png" alt="" class="setaVer" id="seta2-9">
+                <img src="/img/setas-flechas (1).png" alt="" class="setaM" id="seta3-9">
+                <img src="/img/seta-curva-PhotoRoom (1).png" alt="" class="setaAm" id="seta4-9">
+            </div>
+            <div>
+                <img src="/img/caixa-de-embalagem.png" alt="" id="papelao">
+            </div>
+            <button id="confirmar" class="btn btn-danger" onclick="proximo()">CONFIRMAR</button>
+        </div>
+
+
+        <button class="btn btn-danger" id="sair" onclick="sair()">SAIR</button>
+    </div>
+
+
+    <div id="pop-upI1">
+        <div id="acerto_ate3">
+            <img src="/img/triste.gif" alt="" id="triste">
+            <h1> PUTS AMIGO(A) VOCE NÃO FOI BEM EIN</h1>
+            <h1 id="h1"> </h1>
+            <button type="submit" class="btn btn-outline-danger" onclick="tira()" id="finalizar1">VEJA SUA NOTA</button>
+        </div>
+
+
+
+
+        <div id="acerto_ate5">
+            <img src="/img/nervoso.gif" alt="" id="raiva">
+            <h1>PODEMOS MELHORAR NE AMIGO(A) </h1>
+            <h1 id="h2"> </h1>
+            <button type="submit" class="btn btn-outline-danger" onclick="tira()" id="finalizar2">VEJA SUA NOTA</button>
+        </div>
+
+
+
+        <div id="acerto_ate9">
+            <img src="/img/partido.gif" alt="" id="bom">
+            <h1>QUE COISA BOA EIN QUASE UM EXPERT EM RECICLAGEM</h1>
+            <h1 id="h3"> </h1>
+            <button type="submit" class="btn btn-outline-danger" onclick="tira()" id="finalizar3">VEJA SUA NOTA</button>
+        </div>
+
+
+
+        <div id="acerto_tudo">
+            <img src="/img/trofeu.gif" alt="" id="trofeu">
+            <h1>UAUUUU QUE ISSO EIN GABARITOUUU</h1>
+            <h1 id="h4"> </h1>
+            <button type="submit" class="btn btn-outline-danger" onclick="tira()" id="finalizar4">VEJA SUA NOTA</button>
+        </div>
+    </div>
+
+
+    <div id="usuario2">
+        <div id="ponts">
+            <h1>NOTA:</h1>
+            <h1 id="pontuacao" style="font-size: 60px;">oi</h1>
+        </div>
+        <ul id="listas0">
+            <div class="form">
+                <li class="lista1" id="gabarito">GABARITO</li>
+            </div>
+            <div class="form">
+                <li class="lista1">RESPOSTA01</li>
+                <li class="lista2">LATA => METAL(LIXEIRA AMARELA)</li>
+            </div>
+            <div class="form">
+                <li class="lista1">RESPOSTA02</li>
+                <li class="lista2">GARRAFA PLASTICA => PLASTICO(LIXEIRA VERMELHA)</li>
+            </div>
+            <div class="form">
+                <li class="lista1">RESPOSTA03</li>
+                <li class="lista2">MAÇA => ORGANICO(LIXEIRA MARROM)</li>
+            </div>
+            <div class="form">
+                <li class="lista1">RESPOSTA04</li>
+                <li class="lista2">PAPEL AMASSADO => PAPEL(LIXEIRA AZUL)</li>
+            </div>
+            <div class="form">
+                <li class="lista1">RESPOSTA05</li>
+                <li class="lista2">GARRAFA DA VIDRO =>VIDRO(LIXEIRA VERDE)</li>
+            </div>
+            <div class="form">
+                <li class="lista1">RESPOSTA06</li>
+                <li class="lista2">PARAFUSO DE METAL =>METAL(LIXEIRA AMARELA)</li>
+            </div>
+            <div class="form">
+                <li class="lista1">RESPOSTA07</li>
+                <li class="lista2">COPO PLASTICO =>PLASTICO(LIXEIRA VERMELHA)</li>
+            </div>
+            <div class="form">
+                <li class="lista1">RESPOSTA08</li>
+                <li class="lista2">CASCA DE BANANA =>ORGANICO(LIXEIRA ORGANICA)</li>
+            </div>
+            <div class="form">
+                <li class="lista1">RESPOSTA09</li>
+                <li class="lista2">GALÃO PLASTICO =>PLASTICO(LIXEIRA VERMELHA)</li>
+            </div>
+            <div class="form">
+                <li class="lista1">RESPOSTA10</li>
+                <li class="lista2">PAPELÃO =>PAPEL(LIXEIRA AZUL)</li>
+            </div>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/paginas_jogos.js/meioAmbiente.js"></script>
+    <script>
+        window.onload = function () {
+            history.pushState(null, null, location.href);
+            window.onpopstate = function (event) {
+                history.go(1);
+            };
+        };
+    </script>
+</body>
+
+</html>

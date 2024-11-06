@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/MAISSON.CSS/styleForm.css">
+    <title>MEIO AMBIENTE LAR</title>
+</head>
+
+<body
+    style="background-color: #ef3340;background-image: url('/img/Lar_Pag_Principal1.png');background-repeat: no-repeat;background-position: center;background-attachment: fixed;background-position-x: center;">
+    <img src="/img/planeta-terra.png" alt="" id="mundo">
+
+    <ul class="nav nav-pills" id="menu">
+        <img src="/img/Logo_nav.png" alt="Logo">
+        <li class="nav-item">
+            <button type="button" class="btn btn-outline-danger" id="jogo">Jogar</button>
+            <button type="button" class="btn btn-outline-danger" id="sair">Sair</button>
+        </li>
+    </ul>
+
+    <div id="cadastro">
+        <div id="cadastro3">
+            <div id="x2">X</div>
+            <img src="/img/frango_lar-removebg-preview (1).png" alt="" id="frango">
+            <img src="/img/balao-de-fala.png" alt="" id="balao">
+            <h2>Seja bem-vindo ao desafio ambiental!</h2>
+            <p id="texto"></p>
+            <button class="btn btn-danger" onclick="jogar()" id="iniciar">INICIAR</button>
+        </div>
+    </div>
+    <script src="/JSMAI/formulario.js"></script>
+    <script>
+        window.onload = function () {
+            history.pushState(null, null, location.href);
+            window.onpopstate = function (event) {
+                history.go(1);
+            };
+        };
+    </script>
+</body>
+
+</html>
